@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply min-h-screen relative overflow-hidden;
+  }
+
+  .content-wrapper {
+    @apply relative z-10 flex flex-col items-center justify-center min-h-screen p-8;
+  }
+
+  .background-overlay {
+    @apply absolute inset-0 z-0;
+  }
+}

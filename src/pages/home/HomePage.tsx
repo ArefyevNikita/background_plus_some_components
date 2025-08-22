@@ -43,7 +43,7 @@ export const HomePage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16">
-            <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20">
+            <div className="backdrop-blur-sm bg-white/10 rounded-2xl p-6 border border-white/20">
               <div className="text-3xl mb-4">⚡</div>
               <h3 className="text-xl font-semibold text-white mb-2">Быстро</h3>
               <p className="text-gray-300 text-sm">
@@ -51,7 +51,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20">
+            <div className="backdrop-blur-sm bg-white/10 rounded-2xl p-6 border border-white/20">
               <div className="text-3xl mb-4">🎨</div>
               <h3 className="text-xl font-semibold text-white mb-2">Красиво</h3>
               <p className="text-gray-300 text-sm">
@@ -59,13 +59,14 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20">
+            <div className="backdrop-blur-sm bg-white/10 rounded-2xl p-6 border border-white/20">
               <div className="text-3xl mb-4">🏗️</div>
               <h3 className="text-xl font-semibold text-white mb-2">Масштабируемо</h3>
               <p className="text-gray-300 text-sm">
                 Feature-Sliced Design архитектуру для поддерживаемого и масштабируемого кода.
               </p>
             </div>
+            
           </div>
         </div>
       </div>

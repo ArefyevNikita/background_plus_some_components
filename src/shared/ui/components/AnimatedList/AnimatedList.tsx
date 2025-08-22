@@ -180,10 +180,6 @@ export const AnimatedList: React.FC<AnimatedListProps> = ({
   );
 };
 
-/**
- * Individual list item component
- * Separated for better maintainability (Single Responsibility)
- */
 const ListItemComponent: React.FC<{
   item: ListItem;
   variant: string;
@@ -192,7 +188,7 @@ const ListItemComponent: React.FC<{
 
   return (
     <motion.div
-      className="group relative p-6 rounded-2xl backdrop-blur-md bg-white/10 border border-white/20 overflow-hidden cursor-pointer"
+      className="group relative p-6 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 overflow-hidden cursor-pointer"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       whileHover={{

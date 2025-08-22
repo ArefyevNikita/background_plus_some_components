@@ -30,7 +30,7 @@ export const GalleryPage: React.FC = () => {
     <div className="relative min-h-screen">
       <Galaxy className="fixed inset-0 w-full h-full pointer-events-none -z-10" />
 
-      <div className="fixed top-6 inset-x-0 z-[100] pointer-events-none">
+      <div className="flex top-6 inset-x-0 z-[100] pointer-events-none">
         <div className="mx-auto max-w-5xl flex justify-center pointer-events-auto px-4">
           <PillNav
             {...DEFAULT_PILL_NAV_CONFIG}

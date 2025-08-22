@@ -27,6 +27,7 @@ interface ScrollStackProps {
   rotationAmount?: number;
   blurAmount?: number;
   onStackComplete?: () => void;
+  introHeight?: number | string;
 }
 
 const ScrollStack: React.FC<ScrollStackProps> = ({

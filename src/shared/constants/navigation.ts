@@ -14,4 +14,8 @@ export const NAVIGATION_ITEMS: PillNavItem[] = [
     label: 'о нас',
     href: ROUTES.ABOUT,
   },
+  {
+    label: 'контакты',
+    href: ROUTES.CONTACT,
+  },
 ];

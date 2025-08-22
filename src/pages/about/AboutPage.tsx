@@ -44,7 +44,7 @@ export const AboutPage: React.FC = () => {
         </div>
 
         <div className="text-center mt-20">
-          <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 max-w-2xl mx-auto">
+          <div className="backdrop-blur-sm bg-white/10 rounded-2xl p-8 border border-white/20 max-w-2xl mx-auto">
             <h3 className="text-2xl font-semibold text-white mb-4">
               Готовы поработать вместе?
             </h3>
@@ -52,7 +52,7 @@ export const AboutPage: React.FC = () => {
               Давайте создадим что-то удивительное вместе. Свяжитесь с нами, чтобы обсудить ваш следующий проект.
             </p>
             <div className="flex gap-4 justify-center">
-              <button className="px-6 py-3 bg-white/20 hover:bg-white/30 rounded-full text-white font-medium transition-all duration-300 backdrop-blur-md border border-white/20">
+              <button className="px-6 py-3 bg-white/20 hover:bg-white/30 rounded-full text-white font-medium transition-all duration-300 backdrop-blur-sm border border-white/20">
                 Связаться с нами
               </button>
               <button className="px-6 py-3 bg-white hover:bg-gray-100 rounded-full text-gray-900 font-medium transition-all duration-300">

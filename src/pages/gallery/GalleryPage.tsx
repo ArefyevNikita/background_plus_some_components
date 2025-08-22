@@ -1,5 +1,7 @@
 import { Galaxy, PillNav } from '~/shared/ui';
-import ScrollStack, { ScrollStackItem } from '~/shared/ui/components/ScrollStack/ScrollStack';
+import ScrollStack, {
+  ScrollStackItem,
+} from '~/shared/ui/components/ScrollStack/ScrollStack';
 import { GALLERY_STACK_ITEMS } from '~/shared/constants/mockData';
 import { NAVIGATION_ITEMS } from '~/shared/constants/navigation';
 import { DEFAULT_PILL_NAV_CONFIG } from '~/shared/constants/pillNavConfig';
@@ -10,13 +12,13 @@ export const GalleryPage: React.FC = () => {
   const location = useLocation();
   const [showTitle, setShowTitle] = useState(true);
 
-
   useEffect(() => {
-    const scroller = document.querySelector<HTMLDivElement>('.scroll-stack-scroller');
+    const scroller = document.querySelector<HTMLDivElement>(
+      '.scroll-stack-scroller'
+    );
     if (!scroller) return;
 
     const onScroll = () => {
-  
       setShowTitle(scroller.scrollTop < 40);
     };
     onScroll();
@@ -39,7 +41,9 @@ export const GalleryPage: React.FC = () => {
       </div>
 
       <div className="fixed inset-0 flex flex-col items-center justify-center text-center px-4 z-10 pointer-events-none">
-        <div className={`transition-opacity duration-500 ${showTitle ? 'opacity-100' : 'opacity-0'}`}>
+        <div
+          className={`transition-opacity duration-500 ${showTitle ? 'opacity-100' : 'opacity-0'}`}
+        >
           <h1 className="text-5xl font-bold text-white mb-4 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
             Gallery
           </h1>
@@ -49,8 +53,7 @@ export const GalleryPage: React.FC = () => {
         </div>
       </div>
 
-
-      <div className="relative z-20 h-[80vh] px-4">
+      {/* <div className="relative z-20 h-[80vh] px-4">
         <ScrollStack
           className="rounded-2xl"
           itemDistance={120}
@@ -83,7 +86,7 @@ export const GalleryPage: React.FC = () => {
             aspects of modern web development and design principles.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
